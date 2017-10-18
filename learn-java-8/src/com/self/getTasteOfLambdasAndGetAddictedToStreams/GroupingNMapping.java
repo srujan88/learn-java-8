@@ -27,5 +27,6 @@ public class GroupingNMapping {
      Map<String, List<Integer>> map = people.stream()
             .collect(groupingBy(Person::getName, 
                 mapping(Person::getAge, toList())));//);
+     System.out.println("map: " + map);
   }
 }
